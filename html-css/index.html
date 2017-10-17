@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap 4.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+      
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Bootstrap collapse navbar -->
+    <!-- <header class="color sticky-top">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#">Kelvin Zhang</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> 
+        </div>
+    </header> -->
+
+    <!-- Sidebar -->
+    <header style="height:35px" class="color sticky-top">
+        <div>
+            <div style="float:left"><span style="margin:6px auto auto 6px; font-size:20px;">Kelvin Zhang</span></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">Resume</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <span style="float:right;" onclick="openNav()">
+                <div class="ham"></div>
+                <div class="ham"></div>
+                <div class="ham"></div>
+            </span>
+        </div>
+    </header>
+
+    <div style="position: relative" class="container-fluid card">
+        <div class="background row card-header">
+            <div class="col-sm-12 col-md-4">
+                <img src="//hkalex.github.io/img/photo.png" class="my-photo" alt="">
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <div class="my-info"><h1>Kelvin Zhang</h1></div>
+                <div class="my-info"><strong>Junior Web Developer</strong></div>
+                <div class="my-info">
+                    <a class="my-links" href="//twitter.com" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="my-links" href="//facebook.com" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="my-links" href="//instgram.com" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>   
+                    </a>           
+                </div>
+            </div>
+        </div>
+        <div class="row card-body">
+            <div class="col-sm-12 col-md-6 card-body-detail">
+                <div><h2>About me</h2></div>
+                <div>Hello! I’m <span><strong>Kelvin</strong></span> <span><strong>Zhang</strong></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, 
+                    at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.
+                </div>
+                <br>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary">Download Resume</button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 card-body-detail">
+                <div class="row">
+                    <div class="col-4"><h6>Age</h6></div><div class="col">27</div>
+                </div>
+                <div class="row">
+                    <div class="col-4"><h6>Residence</h6></div><div class="col">Australia</div>
+                </div>
+                <div class="row">
+                    <div class="col-4"><h6>Address</h6></div><div class="col">Hurstville</div>
+                </div>
+                <div class="row">
+                    <div class="col-4"><h6>E-mail</h6></div><div class="col"><a href="mailto:lianxue1990@gmail.com">lianxue1990@gmail.com</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-4"><h6>Phone</h6></div><div class="col">040103822</div>
+                </div>
+                <div class="row">
+                    <div class="col-4"><h6>Freelance</h6></div><div class="col">Available</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="color fixed-bottom">
+        <div class="text-center">&copy; 2017 All rights reserved.</div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
