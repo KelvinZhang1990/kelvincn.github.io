@@ -51,11 +51,12 @@
         </div>
     </header> -->
 
-    <!-- Sidebar -->
+    <!-- Sidenav -->
     <header style="height:35px" class="color sticky-top">
         <div>
-            <div style="float:left"><span style="margin:6px auto auto 6px; font-size:20px;">Kelvin Zhang</span></div>
-            <div id="mySidenav" class="sidenav">
+            <div style="float:left"><span style="margin:6px auto auto 10px; font-size:20px;">Kelvin Zhang</span></div>
+            
+            <div id="mySidenav" class="sidenav disappear-md">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Home</a>
                 <a href="#">Resume</a>
@@ -66,15 +67,27 @@
                 <a href="#">Contact</a>
             </div>
 
-            <span style="float:right;" onclick="openNav()">
+            <span class="disappear-md" style="float:right;" onclick="openNav()">
                 <div class="ham"></div>
                 <div class="ham"></div>
                 <div class="ham"></div>
             </span>
+
+            <div class="disappear-sm horinav">
+                <!-- <nav class="horinav"> -->
+                    <a href="#">Home</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                <!-- </nav> -->
+            </div>
         </div>
     </header>
 
-    <div style="position: relative" class="container-fluid card">
+    <div style="position: relative;" class="container-fluid card">
         <div class="background row card-header">
             <div class="col-sm-12 col-md-4">
                 <img src="//hkalex.github.io/img/photo.png" class="my-photo" alt="">
@@ -128,7 +141,7 @@
             </div>
         </div>
     </div>
-    <footer class="color fixed-bottom">
+    <footer style="position:relative;">
         <div class="text-center">&copy; 2017 All rights reserved.</div>
     </footer>
 

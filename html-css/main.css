@@ -1,7 +1,8 @@
+/* start of sidenav */
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 50%; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -10,16 +11,17 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    /* margin-right: auto; */
 }
 
 /* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -31,9 +33,12 @@
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    /* left: 25px; */
     font-size: 36px;
-    /* margin-left: 25px; */
+}
+/* end of sidenav*/
+
+.disappear-sm {
+    display: none;
 }
 
 .inline-display {
@@ -44,7 +49,18 @@
     width: 35px;
     height: 3px;
     background-color: #4E4E4E;
-    margin: 6px 6px;
+    margin: 6px 10px;
+}
+
+.horinav a {
+    float: right;
+    color: #818181;
+    margin: auto 10px auto 10px;
+    font-size: 20px;
+}
+
+.horinav a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
 }
 
 .color {
@@ -82,6 +98,14 @@
 
     .my-info {
         text-align: left;
+    }
+    
+    .disappear-md {
+        display: none;
+    }
+
+    .disappear-sm {
+        display: inline;
     }
 }
 
